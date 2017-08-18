@@ -51,6 +51,7 @@ class AriaParser(Parser):
         context.reading.reader_source = import_fullname(reader_source)()
         context.presentation.presenter_source = import_fullname(presenter_source)()
         context.presentation.presenter_class = import_fullname(presenter)
+        context.presentation.threads = 1
         context.presentation.print_exceptions = debug
         return context
 

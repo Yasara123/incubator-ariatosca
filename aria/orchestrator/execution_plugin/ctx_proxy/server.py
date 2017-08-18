@@ -144,6 +144,7 @@ class CtxProxy(object):
 
     def __exit__(self, *args, **kwargs):
         self.close()
+        return False
 
 
 class CtxError(RuntimeError):
